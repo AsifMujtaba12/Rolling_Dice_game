@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dice Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-green-400 flex items-center justify-center h-screen w-full ">
+    <div id="container" class="bg-white rounded-lg p-5 max-w-[600px] text-center">
+        <h1 class="text-indigo-500 text-xl mb-2 font-semibold border-b-4 border-indigo-500 pb-1">Rolling Dice Game</h1>
+        <div id="dice-part" class="flex items-center gap-20 mt-10">
+            <div id="player1Dice" class="flex flex-col items-center gap-10">
+                <h2 class="text-2xl font-semibold text-indigo-500">Player A </h2>
+                <div id="playerADice" class="text-6xl mb-4">🎲</div>
+                <div id="scoredivA" class="text-xl border-solid border-2 border-indigo-500  rounded-lg bg-indigo-500 text-white p-2">Score : <span id="playerAScore"></span></div>
+
+            </div>
+            <div id="player2dice" class="flex flex-col gap-10 items-center">
+                <h2 class="text-2xl font-semibold text-indigo-500">Player B </h2>
+                <div id="playerBDice" class="text-6xl mb-4">🎲</div>
+                <div id="scoredivB" class="text-xl border-solid border-2 border-indigo-500  rounded-lg bg-indigo-500 text-white p-2">Score:<span id="playerBScore"></span></div>
+            </div>
+
+        </div>
+        <div class="mt-10 mb-5">
+            <button id="button" class="p-3 bg-indigo-500 text-white rounded hover:bg-blue-800 cursor-pointer">Roll Dice</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
